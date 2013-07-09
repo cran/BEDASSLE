@@ -165,6 +165,11 @@ Gideon Bradburd
 	data(HGDP.bedassle.data)
 	data(mcmc.operators)
 
+#The value of delta may set off warnings, 
+#so temporarily disable warnings.
+	op <- options("warn")
+	options(warn = -1)
+	
 #Call the Markov chain Monte Carlo for the standard model	
 	MCMC(
 		counts = HGDP.bedassle.data$allele.counts,
@@ -188,4 +193,7 @@ Gideon Bradburd
 		continue = FALSE,
 		continuing.params = NULL
 	)
+
+#Re-enable warnings
+	options(op)
 }

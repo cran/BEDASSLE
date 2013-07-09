@@ -1,4 +1,4 @@
-43d1facede8716f294f49809cae4e2f0 *DESCRIPTION
+92430924ed091bd76c6bb8aaba0cb103 *DESCRIPTION
 5e6ad13cd840407dd2fc433a39077052 *NAMESPACE
 4ae04fececbe1460e620a3683e845bcd *R/BB_Likelihood_counts.R
 5d8cc64ab940b8e5260c90d759839bb0 *R/BB_Prior_prob_phi.R
@@ -9,8 +9,8 @@ fe7d2a3cc4395851b2dd746fa4a24c27 *R/BB_Update_thetas.R
 55f3abfc5cdb778836e546fe34a69bef *R/Initialize.params.R
 93cab56adad02fa1602622195ddcde62 *R/Likelihood_counts.R
 725f6d9d5ab6933657b1ef5397b906e7 *R/Likelihood_thetas.R
-846dc9387137508eca24d0143fd434e8 *R/MCMC.R
-dab8113eecf1c5c64a0b7c669d67ef3b *R/MCMC_BB.R
+bc5dd7bd9f295f9fbc3f20df2e8fa1c4 *R/MCMC.R
+1e6231d48843fdb44c043e8ce98546fb *R/MCMC_BB.R
 27977f0ab244de6b22a984e5cad85da0 *R/Prior_prob_alpha0.R
 d0e3364118c57ed06fa2426097322a6d *R/Prior_prob_alpha2.R
 004bda996ccb9727db238a176877c7a3 *R/Prior_prob_alphaD.R
@@ -52,10 +52,10 @@ b08f0dd7621c3ac492505c3dcd30dff3 *R/posterior.predictive.sample.R
 746b15618172f5be6dbdd35c3ad70826 *data/HGDP.bedassle.data.rda
 e6afdd23b881fb9b73c58a624c3601a5 *data/mcmc.operators.rda
 ebf1a1d0c7d8b987466c4da21e5204b4 *man/BEDASSLE-internal.Rd
-92a1c9a59762411dac18fbf22b8c0952 *man/BEDASSLE-package.Rd
+09bed5340b5f1dbcc5760c002ff4e867 *man/BEDASSLE-package.Rd
 7d0a423408e62395fd2d440f2539c024 *man/Covariance.Rd
 a8c093111298350085762fd616c3ccfc *man/HGDP.bedassle.data.Rd
-f63d79f04947adaf012f477f61a11f13 *man/MCMC.Rd
+010b2bf96ea56dbd5031f0771bf14bc5 *man/MCMC.Rd
 6a965f94937e459a9cd78f036dd32b9c *man/MCMC_BB.Rd
 3bd38fce490a0775833c9e5090aecf01 *man/calculate.all.pairwise.Fst.Rd
 62184089994369e8970c2f35afcadfa8 *man/calculate.pairwise.Fst.Rd
