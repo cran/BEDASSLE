@@ -1,0 +1,4 @@
+exportPattern("^[[:alpha:]]+")
+importFrom("MASS",ginv,mvrnorm)
+importFrom("matrixcalc",is.positive.definite)
+importFrom("emdbook",rbetabinom)
