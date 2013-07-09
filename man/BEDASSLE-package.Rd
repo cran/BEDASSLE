@@ -17,8 +17,8 @@ allele frequencies, are estimated in a custom Markov chain Monte Carlo.
 \tabular{ll}{
 Package: \tab BEDASSLE\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2013-07-09\cr
+Version: \tab 1.1\cr
+Date: \tab 2013-09-12\cr
 License: \tab GPL (>=2) \cr
 }
 The two inference functions are \command{MCMC} and \command{MCMC_BB}, which call the 

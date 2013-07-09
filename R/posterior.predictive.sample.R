@@ -31,7 +31,7 @@ function(MCMC.output,posterior.predictive.sample.size,output.file,prefix=''){
 															last.params$E,
 															last.params$delta)
 					posterior.sample.thetas <- t(mvrnorm(last.params$loci,numeric(n.pops),posterior.sample.covariance))
-					posterior.sample.mu <- matrix(rnorm(n.loci,0,sd=1/posterior.sample.beta[i]),nrow=n.pops,ncol=n.loci,byrow=TRUE)
+					posterior.sample.mu <- matrix(rnorm(n.loci,0,sd=sqrt(1/posterior.sample.beta[i])),nrow=n.pops,ncol=n.loci,byrow=TRUE)
 					posterior.allele.frequencies <- transform_frequencies(posterior.sample.thetas,posterior.sample.mu)
 						if(!exists("phi_mat")){
 							posterior.sample.allele.counts <- simulate_allele_count_data(posterior.allele.frequencies,last.params$sample_sizes)

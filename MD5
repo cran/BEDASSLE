@@ -1,4 +1,4 @@
-5ea63ce461ff71a670c9d798e500f889 *DESCRIPTION
+43d1facede8716f294f49809cae4e2f0 *DESCRIPTION
 5e6ad13cd840407dd2fc433a39077052 *NAMESPACE
 4ae04fececbe1460e620a3683e845bcd *R/BB_Likelihood_counts.R
 5d8cc64ab940b8e5260c90d759839bb0 *R/BB_Prior_prob_phi.R
@@ -6,7 +6,7 @@
 e2d0bd183bef65a3b764c4c3c3abc112 *R/BB_Update_phi.R
 fe7d2a3cc4395851b2dd746fa4a24c27 *R/BB_Update_thetas.R
 4fb4baec67581ef42ba98e6560adc509 *R/Covariance.R
-c6aeb3cb9cbc044b1ce2ff2493028881 *R/Initialize.params.R
+55f3abfc5cdb778836e546fe34a69bef *R/Initialize.params.R
 93cab56adad02fa1602622195ddcde62 *R/Likelihood_counts.R
 725f6d9d5ab6933657b1ef5397b906e7 *R/Likelihood_thetas.R
 846dc9387137508eca24d0143fd434e8 *R/MCMC.R
@@ -46,13 +46,13 @@ ec4cf2574a8730c9690b58b9f279e967 *R/make.continuing.params.R
 4291a369b3c3edff094f14c4f40dee27 *R/plot_phi_trace.R
 28cf33374171f803eace39062bcbe872 *R/plot_posterior_predictive_samples.R
 16594fdc4675bb62c058dd02d06a94fc *R/plot_trace.R
-6d9e4b332f4665f5cf8af23f245d1411 *R/posterior.predictive.sample.R
+b08f0dd7621c3ac492505c3dcd30dff3 *R/posterior.predictive.sample.R
 9395bf3036af9bc8e76aea7fc261979a *R/simulate_allele_count_data.R
 94147ce90b21ad726122cc19a9a7b2a8 *R/transform_frequencies.R
 746b15618172f5be6dbdd35c3ad70826 *data/HGDP.bedassle.data.rda
 e6afdd23b881fb9b73c58a624c3601a5 *data/mcmc.operators.rda
 ebf1a1d0c7d8b987466c4da21e5204b4 *man/BEDASSLE-internal.Rd
-770622819309a02b9e1d58847735dd7d *man/BEDASSLE-package.Rd
+92a1c9a59762411dac18fbf22b8c0952 *man/BEDASSLE-package.Rd
 7d0a423408e62395fd2d440f2539c024 *man/Covariance.Rd
 a8c093111298350085762fd616c3ccfc *man/HGDP.bedassle.data.Rd
 f63d79f04947adaf012f477f61a11f13 *man/MCMC.Rd

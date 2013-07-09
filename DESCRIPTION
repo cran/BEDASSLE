@@ -2,7 +2,7 @@ Package: BEDASSLE
 Type: Package
 Title: Disentangles the effects of geographic and ecological isolation
         on genetic differentiation
-Version: 1.0
+Version: 1.1
 Date: 2013-07-09
 Author: Gideon Bradburd
 Maintainer: Gideon Bradburd <gbradburd@ucdavis.edu>
@@ -14,7 +14,7 @@ Description: This package provides functions that allow users to quantify the re
 	diagnosis and assessing model adequacy.
 License: GPL (>= 2)
 Imports: MASS, matrixcalc, emdbook
-Packaged: 2013-07-31 19:09:15 UTC; gburd
+Packaged: 2013-09-11 16:59:05 UTC; gburd
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2013-07-31 21:22:57
+Date/Publication: 2013-09-11 20:46:41
