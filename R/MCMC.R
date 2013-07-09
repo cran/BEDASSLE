@@ -22,8 +22,7 @@ function(counts,
 	
 	if(!is.null(directory)){
 		setwd(directory)
-	}
-	
+	}	
 	if(min(D[upper.tri(D)]) < delta){
 		warning("the value chosen for delta may too large compared to the geographic distances between the sampled populations")
 	}
@@ -31,6 +30,7 @@ function(counts,
 	if(any(lapply(E,function(EE) min(EE[upper.tri(EE)])) < delta)){
 		warning("the value chosen for delta may too large compared to the ecological distances between the sampled populations")
 	}
+	
 	#Declare variables
 		LnL_thetas <- numeric(ngen/samplefreq) 				
 		LnL_thetas_vec <- numeric(loci)						

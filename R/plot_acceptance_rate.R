@@ -1,7 +1,8 @@
 plot_acceptance_rate <-
 function(accepted.moves,proposed.moves,param.name=deparse(substitute(accepted.moves))){
         param.name <- strsplit(param.name,split="_")[[1]][1]
-		acceptance.rate <- accepted.moves/proposed.moves
+		x <- seq(1,length(which(proposed.moves!=0)))
+		acceptance.rate[x] <- accepted.moves[x]/proposed.moves[x]
 			plot(acceptance.rate,
 				pch=20,
 				col=adjustcolor(1,alpha.f=0.7),

@@ -9,10 +9,8 @@
 }
 \usage{
 MCMC(counts, sample_sizes, D, E, k, loci, delta, aD_stp, aE_stp, a2_stp, thetas_stp,
-mu_stp, ngen,
-printfreq, savefreq, samplefreq, directory = NULL, prefix = "", continue = FALSE,
-continuing.params
-= NULL)
+mu_stp, ngen, printfreq, savefreq, samplefreq, directory = NULL, prefix = "", 
+continue = FALSE, continuing.params = NULL)
 }
 \arguments{
   \item{counts}{
@@ -28,9 +26,14 @@ continuing.params
 	of chromosomes successfully genotyped at each locus in each population.
 }
   \item{D}{
-	Pairwise geographic distance (\eqn{D_{i,j}}).  This may be Euclidean, or, if the
-geographic
-	scale of sampling merits it, great-circle distance.
+	Pairwise geographic distance (\eqn{D_{i,j}}).  This can be two-dimensional Euclidean
+distance, or great-circle distance, or, in fact, any positive definite matrix (deriving,
+for instance, from a resistance distance).  However, note that the algorithm silently
+restricts the prior on the alpha parameters, and specifically the alpha_2 parameter, to
+the part of parameter space that results in valid covariance matrices; in the case of
+two-dimensional Euclidean distances, this will not happen, since any value of alpha_2
+between 0 and 2 is valid (see Guillot et al.'s "Valid covariance models for the analysis
+of geographical genetic variation" for more detail on this).
 }
   \item{E}{
 	Pairwise ecological distance(s) (\eqn{E_{i,j}}), which may be continuous (e.g. - 
