@@ -1,5 +1,6 @@
 link.up.posteriors <-
 function(MCMC.output1,MCMC.output2,linked.up.output.file.name){ 
+# recover()
 	load(MCMC.output1)
 	parameters <- objects()	
 		for(i in 1:length(parameters)){
@@ -23,6 +24,6 @@ function(MCMC.output1,MCMC.output2,linked.up.output.file.name){
 				}			
 			}
 		}
-	rm(list=objects(pattern="tmp."))
+	rm(list=unique(c(objects(pattern="tmp."),objects(pattern="MCMC.output"))))
 	save(list=setdiff(ls(all.names=TRUE),"linked.up.output.file.name"),file=paste(linked.up.output.file.name,".Robj",sep=""))
 }

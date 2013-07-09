@@ -7,3 +7,4 @@ function(last.params){
 		new.params$beta_moves <- new.params$beta_moves+1
 		return(new.params)
 	}
+

@@ -17,7 +17,7 @@ allele frequencies, are estimated in a custom Markov chain Monte Carlo.
 \tabular{ll}{
 Package: \tab BEDASSLE\cr
 Type: \tab Package\cr
-Version: \tab 1.2\cr
+Version: \tab 1.4\cr
 Date: \tab 2013-09-12\cr
 License: \tab GPL (>=2) \cr
 }

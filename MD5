@@ -1,4 +1,4 @@
-fbdfd7ef6f08db90428ab7624f3cbf47 *DESCRIPTION
+5067880c28855a18d74db9a45f281cd9 *DESCRIPTION
 5e6ad13cd840407dd2fc433a39077052 *NAMESPACE
 4ae04fececbe1460e620a3683e845bcd *R/BB_Likelihood_counts.R
 5d8cc64ab940b8e5260c90d759839bb0 *R/BB_Prior_prob_phi.R
@@ -22,18 +22,18 @@ a683a5249c9072d5702baaee9a8ab13c *R/Prior_prob_alphaE.R
 316d2898b82be7decf8fc0bcd83f4115 *R/Update_a2.R
 1d16200f2dc7d0ba0dec076018eb1b2a *R/Update_aD.R
 b14e2705e0d2561d25884cb80b511df8 *R/Update_aE.R
-e9fff34f8399b0a0b4969cf491f7c186 *R/Update_beta.R
+2540fce436a93b28b586ade792d8be51 *R/Update_beta.R
 033981ee7dd34e201b532badacb9cff5 *R/Update_mu.R
 ad0149b9831918431cef14cf2777c9e5 *R/Update_thetas.R
 c8914f10acddccee33a286bd23af8532 *R/a0_gibbs_rate.R
 593760be39162484a8a7e98f42519a56 *R/calculate.all.pairwise.Fst.R
 fe91191087232ccb857cabfb1e366b48 *R/calculate.pairwise.Fst.R
 364963668b11d4d7e421ae7e5816c734 *R/identify_invariant_loci.R
-083ea0bc305fdde2434319fc04efc881 *R/link.up.posteriors.R
+5bad626321c169fdb6fbc2b9c144ed19 *R/link.up.posteriors.R
 6a49058abc5bd3dc35026d121afede53 *R/load_MCMC_output.R
 117c48c6d5b53f55182fb9bc04045520 *R/load_posterior_predictive_samples.R
 ec4cf2574a8730c9690b58b9f279e967 *R/make.continuing.params.R
-d45aebf64f1dcd32e45c0d14acf44377 *R/plot_acceptance_rate.R
+c628bd322bc3fbe98c02f878220ce453 *R/plot_acceptance_rate.R
 9e5dc14b2e2de958340bac733966775f *R/plot_all_acceptance_rates.R
 666d7b0eba881641e80bcc8cec6c27d5 *R/plot_all_joint_marginals.R
 629e8cc7a605fb568c405c7f100b738d *R/plot_all_marginals.R
@@ -52,7 +52,7 @@ b08f0dd7621c3ac492505c3dcd30dff3 *R/posterior.predictive.sample.R
 746b15618172f5be6dbdd35c3ad70826 *data/HGDP.bedassle.data.rda
 e6afdd23b881fb9b73c58a624c3601a5 *data/mcmc.operators.rda
 ebf1a1d0c7d8b987466c4da21e5204b4 *man/BEDASSLE-internal.Rd
-09bed5340b5f1dbcc5760c002ff4e867 *man/BEDASSLE-package.Rd
+9da90946d493ce47b099a55479e55d03 *man/BEDASSLE-package.Rd
 7d0a423408e62395fd2d440f2539c024 *man/Covariance.Rd
 a8c093111298350085762fd616c3ccfc *man/HGDP.bedassle.data.Rd
 f906365f1f1cdef8d4fc804bd07bc56f *man/MCMC.Rd
