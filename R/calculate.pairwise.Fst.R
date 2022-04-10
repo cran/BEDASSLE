@@ -2,7 +2,7 @@ calculate.pairwise.Fst <-
 function(allele.counts,sample.sizes){
 		raw.population.allele.frequencies <- allele.counts/sample.sizes
 			missing.data.loci <- which(is.na(raw.population.allele.frequencies),arr.ind=TRUE)[,2]
-		if(sum(missing.data.loci) > 0){
+		if(sum(as.numeric(missing.data.loci)) > 0){
 			allele.counts <- allele.counts[,-c(missing.data.loci)]
 			sample.sizes <- sample.sizes[,-c(missing.data.loci)]
 		}

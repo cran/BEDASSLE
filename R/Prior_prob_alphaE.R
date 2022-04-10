@@ -1,4 +1,4 @@
 Prior_prob_alphaE <-
 function(aE){
-		sum( dexp(aE,log=TRUE) )
+		sum( stats::dexp(aE,log=TRUE) )
 	}

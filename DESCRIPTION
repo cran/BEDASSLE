@@ -1,12 +1,12 @@
 Package: BEDASSLE
 Type: Package
-Title: Quantifies effects of geo/eco distance on genetic
-        differentiation
-Version: 1.5
-Date: 2014-12-03
+Title: Quantifies Effects of Geo/Eco Distance on Genetic
+        Differentiation
+Version: 1.6
+Date: 2022-4-10
 Author: Gideon Bradburd
 Maintainer: Gideon Bradburd <gbradburd@ucdavis.edu>
-Description: provides functions that allow users to quantify the relative 
+Description: Provides functions that allow users to quantify the relative 
 	contributions of geographic and ecological distances to empirical patterns of genetic 
 	differentiation on a landscape.  Specifically, we use a custom Markov chain 
 	Monte Carlo (MCMC) algorithm, which is used to estimate the parameters of the 
@@ -14,7 +14,7 @@ Description: provides functions that allow users to quantify the relative
 	model adequacy.
 License: GPL (>= 2)
 Imports: MASS, matrixcalc, emdbook
-Packaged: 2014-12-03 18:25:50 UTC; gburd
 NeedsCompilation: no
+Packaged: 2022-04-10 18:52:29 UTC; bradburd
 Repository: CRAN
-Date/Publication: 2014-12-04 00:30:44
+Date/Publication: 2022-04-10 19:12:30 UTC

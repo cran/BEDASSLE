@@ -22,18 +22,18 @@ function(parameter,percent.burnin=0,thinning=1,histogram=TRUE,density=TRUE,popul
                 )
 			}			
 			if(histogram){
-				hist(parameter[x],
+				graphics::hist(parameter[x],
 					freq=FALSE,
 					col="gray",
 					add=TRUE)
 			}
 			if(density){
-				lines(marginal,adj=1)
-				polygon(x=c(0,marginal$x,0),y=c(0,marginal$y,0),col=adjustcolor("blue",0.6))					
+				graphics::lines(marginal,adj=1)
+				graphics::polygon(x=c(0,marginal$x,0),y=c(0,marginal$y,0),col=grDevices::adjustcolor("blue",0.6))					
 			}
-				segments(x0=median(parameter[x]),
+				graphics::segments(x0=stats::median(parameter[x]),
 					y0=0,
-					x1=median(parameter[x]),
+					x1=stats::median(parameter[x]),
 					y1=max(marginal$y+marginal$y/20),
 					col="red",
 					lwd=3)		

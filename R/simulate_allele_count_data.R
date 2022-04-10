@@ -8,7 +8,7 @@ function(allele.frequencies,sample.sizes,phi.parameter=NULL,invariant.loci.toler
 			invariant.loci <- apply(simulated.allele.counts,2,identify_invariant_loci)
 			i <- 0
 				while(any(invariant.loci=="TRUE") && i < invariant.loci.tolerance){
-					simulated.allele.counts <- matrix(	rbinom(n=populations*loci,
+					simulated.allele.counts <- matrix(	stats::rbinom(n=populations*loci,
 														size=sample.sizes,
 														prob=allele.frequencies),
 												nrow=populations,ncol=loci)
@@ -23,7 +23,7 @@ function(allele.frequencies,sample.sizes,phi.parameter=NULL,invariant.loci.toler
 					allele.frequencies[which(allele.frequencies == 0)] <- allele.frequency.numerical.shift
 					allele.frequencies[which(allele.frequencies == 1)] <- 1-allele.frequency.numerical.shift
 					
-					simulated.allele.counts <- matrix(	rbetabinom(n=populations*loci,
+					simulated.allele.counts <- matrix(	emdbook::rbetabinom(n=populations*loci,
 														size=sample.sizes,
 														prob=allele.frequencies,
 														shape1=phi.parameter*allele.frequencies,

@@ -9,7 +9,7 @@ function(MCMC.output1,MCMC.output2,linked.up.output.file.name){
 	load(MCMC.output2)	
 		for(i in 1:length(parameters)){
 			if(length(get(parameters[i])) > 1 && grepl(pattern="last.params",parameters[i])==FALSE){		
-				if(class(get(parameters[i])) == "numeric"){
+				if(inherits(get(parameters[i]),"numeric")){
 					if(grepl("moves",parameters[i]) || grepl("accept",parameters[i])){
 						assign(parameters[i],
 							c(get(sprintf("tmp.%s",parameters[i])),
@@ -19,7 +19,7 @@ function(MCMC.output1,MCMC.output2,linked.up.output.file.name){
 						assign(parameters[i],c(get(sprintf("tmp.%s",parameters[i])),get(parameters[i])))				
 					}
 				}
-				if(class(get(parameters[i])) == "matrix"){
+				if(inherits(get(parameters[i]),"matrix")){
 					assign(parameters[i],cbind(get(sprintf("tmp.%s",parameters[i])),get(parameters[i])))
 				}			
 			}

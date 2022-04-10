@@ -62,11 +62,11 @@ function(counts,
 				pos.def.counter <- 0
 
 			while(Prob[1] == -Inf){
-				while(!is.positive.definite(covariance) && pos.def.counter < 100){
-						a0[1] <- runif(1,0,4)												
-						aD[1] <- runif(1,0,4)												
-						aE[,1] <- runif(length(E),0,4)										
-						a2[1] <- runif(1,0,2)												
+				while(!matrixcalc::is.positive.definite(covariance) && pos.def.counter < 100){
+						a0[1] <- stats::runif(1,0,4)												
+						aD[1] <- stats::runif(1,0,4)												
+						aE[,1] <- stats::runif(length(E),0,4)										
+						a2[1] <- stats::runif(1,0,2)												
 					covariance <- Covariance(a0[1],aD[1],aE[,1],a2[1],D,E,delta)	
 					initial.params <- Initialize.params(counts,sample_sizes,k,loci) 		
 					beta[1] <- initial.params$beta_hat
@@ -101,7 +101,7 @@ function(counts,
 			aE[,1] <- continuing.params$aE											
 			a2[1] <- continuing.params$a2											
 				covariance <- Covariance(a0[1],aD[1],aE[,1],a2[1],D,E,delta)	
-				if(!is.positive.definite(covariance)){ 								
+				if(!matrixcalc::is.positive.definite(covariance)){ 								
 					stop("the initial covariance matrix is not positive definite! Either attempt to re-initialize MCMC, or increase the size of the delta shift")
 				}			
 			beta[1] <-  continuing.params$beta											

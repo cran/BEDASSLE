@@ -1,7 +1,7 @@
 calculate.all.pairwise.Fst <-
 function(allele.counts,sample.sizes){
 		number.of.populations <- nrow(allele.counts)
-		list.of.pairwise.comparisons <- combn(1:number.of.populations,2)
+		list.of.pairwise.comparisons <- utils::combn(1:number.of.populations,2)
 		pairwise.Fst.matrix <- matrix(0,nrow=number.of.populations,ncol=number.of.populations)
 			Fst.vector <- numeric(ncol(list.of.pairwise.comparisons))
 				for(i in 1:ncol(list.of.pairwise.comparisons)){

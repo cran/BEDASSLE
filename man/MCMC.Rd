@@ -174,6 +174,7 @@ Gideon Bradburd
 	options(warn = -1)
 	
 #Call the Markov chain Monte Carlo for the standard model	
+\dontrun{
 	MCMC(
 		counts = HGDP.bedassle.data$allele.counts,
 		sample_sizes = HGDP.bedassle.data$sample.sizes,
@@ -196,7 +197,7 @@ Gideon Bradburd
 		continue = FALSE,
 		continuing.params = NULL
 	)
-
+}
 #Re-enable warnings
 	options(op)
 }

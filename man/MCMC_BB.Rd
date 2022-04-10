@@ -170,6 +170,7 @@ Gideon Bradburd
 }
 \examples{
 #With the HGDP dataset and mcmc operators
+
 	data(HGDP.bedassle.data)
 	data(mcmc.operators)
 
@@ -179,6 +180,7 @@ Gideon Bradburd
 	options(warn = -1)
 
 #Call the Markov chain Monte Carlo for the overdispersion model	
+\dontrun{
 	MCMC_BB(
 		counts = HGDP.bedassle.data$allele.counts,
 		sample_sizes = HGDP.bedassle.data$sample.sizes,
@@ -202,7 +204,7 @@ Gideon Bradburd
 		continue = FALSE,
 		continuing.params = NULL
 	)
-
+}
 #Re-enable warnings
 	options(op)
 }
