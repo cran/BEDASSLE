@@ -1,4 +1,4 @@
-a380276dec522befd6f947f68144e731 *DESCRIPTION
+7240d81736d5bb8266b631590c70ff6f *DESCRIPTION
 c0324695218b9ebcb0a6676d692757d4 *NAMESPACE
 4ae04fececbe1460e620a3683e845bcd *R/BB_Likelihood_counts.R
 8a640e0a61e9aa2b4270dc89fcd17343 *R/BB_Prior_prob_phi.R
@@ -52,7 +52,7 @@ b08f0dd7621c3ac492505c3dcd30dff3 *R/posterior.predictive.sample.R
 746b15618172f5be6dbdd35c3ad70826 *data/HGDP.bedassle.data.rda
 e6afdd23b881fb9b73c58a624c3601a5 *data/mcmc.operators.rda
 ebf1a1d0c7d8b987466c4da21e5204b4 *man/BEDASSLE-internal.Rd
-458b85b18818a5b5498f628fb6ee107f *man/BEDASSLE-package.Rd
+d4c72ade3bc5eb0dcc2d196dfdfd7cf8 *man/BEDASSLE-package.Rd
 7d0a423408e62395fd2d440f2539c024 *man/Covariance.Rd
 a8c093111298350085762fd616c3ccfc *man/HGDP.bedassle.data.Rd
 83357251aa89677f80acb7db7f9b103e *man/MCMC.Rd

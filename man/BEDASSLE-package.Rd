@@ -12,21 +12,13 @@ landscape as a decreasing function of their pairwise geographic and ecological d
 Allele frequencies are modeled as a spatial Gaussian process with a parametric covariance 
 function. The parameters of this covariance function, as well as the spatially smoothed 
 allele frequencies, are estimated in a custom Markov chain Monte Carlo.
-}
-\details{
-\tabular{ll}{
-Package: \tab BEDASSLE\cr
-Type: \tab Package\cr
-Version: \tab 1.5\cr
-Date: \tab 2013-09-12\cr
-License: \tab GPL (>=2) \cr
-}
-The two inference functions are \command{MCMC} and \command{MCMC_BB}, which call the 
+
+The two inference functions are \code{MCMC} and \code{MCMC_BB}, which call the 
 Markov chain Monte Carlo algorithms on the standard and overdispersion (Beta-Binomial)
 models, respectively.  To evaluate MCMC performance, there are a number of MCMC diagnosis
 and visualization functions, which variously show the trace, plots, marginal and joint
 marginal densities, and parameter acceptance rates.  To evaluate model adequacy, there is 
-a posterior predictive sample function (\command{posterior.predictive.sample}), and an
+a posterior predictive sample function (\code{posterior.predictive.sample}), and an
 accompanying function to plot its output and visually assess the model's ability to 
 describe the user's data.  
 }
